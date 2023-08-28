@@ -3,6 +3,9 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <groupId>cn.bobayu.ratelimiter.test</groupId>
+    <artifactId>ratelimiter-spring-boot-starter-test</artifactId>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -10,18 +13,19 @@
         <relativePath/>
     </parent>
 
-    <groupId>cn.bobasyu</groupId>
-    <artifactId>learning-spring-boot-starter</artifactId>
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>whitelist-spring-boot-starter</module>
-        <module>whitelist-spring-boot-starter-test</module>
-        <module>hystrix-spring-boot-starter</module>
-        <module>hystrix-spring-boot-starter-test</module>
-        <module>ratelimiter-spring-boot-starter</module>
-        <module>ratelimiter-spring-boot-starter-test</module>
-    </modules>
+    <dependencies>
+        <dependency>
+            <groupId>cn.bobayu.ratelimiter</groupId>
+            <artifactId>ratelimiter-spring-boot-starter</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
