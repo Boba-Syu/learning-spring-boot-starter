@@ -10,20 +10,9 @@
         <relativePath/>
     </parent>
 
-    <groupId>cn.bobasyu</groupId>
-    <artifactId>learning-spring-boot-starter</artifactId>
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>whitelist-spring-boot-starter</module>
-        <module>whitelist-spring-boot-starter-test</module>
-        <module>hystrix-spring-boot-starter</module>
-        <module>hystrix-spring-boot-starter-test</module>
-        <module>ratelimiter-spring-boot-starter</module>
-        <module>ratelimiter-spring-boot-starter-test</module>
-        <module>methodext-spring-boot-starter</module>
-        <module>methodext-spring-boot-starter-test</module>
-    </modules>
+    <groupId>cn.bobasyu.methodext</groupId>
+    <artifactId>methodext-spring-boot-starter</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -31,4 +20,19 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.83</version>
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+        </dependency>
+    </dependencies>
 </project>
