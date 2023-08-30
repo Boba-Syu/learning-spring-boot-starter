@@ -21,7 +21,7 @@ public class DoMethodExtPoint {
 
     private Logger logger = LoggerFactory.getLogger(DoMethodExtPoint.class);
 
-    @Pointcut("@annotation(cn.bobasyu .methodext.annotation.DoMethodExt)")
+    @Pointcut("@annotation(cn.bobasyu.methodext.annotation.DoMethodExt)")
     public void aopPoint() {
     }
 
