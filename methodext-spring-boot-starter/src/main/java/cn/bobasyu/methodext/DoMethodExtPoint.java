@@ -52,7 +52,7 @@ public class DoMethodExtPoint {
         return jp.getTarget().getClass().getMethod(methodSignature.getName(), methodSignature.getParameterTypes());
     }
 
-    private Class<? extends Object> getClass(JoinPoint jp) throws NoSuchMethodException {
+    private Class<?> getClass(JoinPoint jp) throws NoSuchMethodException {
         return jp.getTarget().getClass();
     }
 }
