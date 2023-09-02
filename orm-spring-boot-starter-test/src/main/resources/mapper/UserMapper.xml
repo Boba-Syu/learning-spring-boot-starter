@@ -1,0 +1,7 @@
+<mapper namespace="cn.bobasyu.orm.test.mapper.IUserMapper">
+    <select id="queryUserById" parameterType="java.lang.Long" resultType="cn.bobasyu.orm.test.entity.User">
+        SELECT id, userId, userNickName, userHead, userPassword, createTime
+        FROM user
+        where id = #{id}
+    </select>
+</mapper>
