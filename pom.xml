@@ -27,6 +27,9 @@
         <module>orm-spring</module>
         <module>orm-spring-boot-starter</module>
         <module>orm-spring-boot-starter-test</module>
+        <module>redis-spring-boot-starter</module>
+        <module>redis-spring-boot-starter-test</module>
+        <module>redis-spring-boot-starter-test</module>
     </modules>
 
     <properties>
